@@ -80,20 +80,26 @@ class ListaDinamica{
 	}
 	public int largoLista(){
 		int i=0;
-		NodoLista temp=cabeza;
-		while(temp.sgte!=null){
+		NodoLista aux=cabeza;
+		while(aux.sgte!=null){
 			i=i+1;
-			temp=temp.sgte;
+			aux=aux.sgte;
 		}
 		return i;
 	}
 
 	public float promedio(){
+		float suma=0;
+		float prom;
+		int num;
+		int largo=largoLista();
+		NodoLista aux=cabeza;
+		while(aux!=null){
+			num=aux.getDato();
+			suma=suma+num;
+			aux=aux.sgte;
+		}
+		prom=suma/largo;
+		return prom;
 	}
-
-
-
-
-
-
 }
