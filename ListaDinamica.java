@@ -78,6 +78,18 @@ class ListaDinamica{
 		}
 		return -1;
 	}
+	public int largoLista(){
+		int i=0;
+		NodoLista temp=cabeza;
+		while(temp.sgte!=null){
+			i=i+1;
+			temp=temp.sgte;
+		}
+		return i;
+	}
+
+	public float promedio(){
+	}
 
 
 
