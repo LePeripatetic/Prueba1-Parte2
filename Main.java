@@ -7,6 +7,7 @@ class Main{
 		L.insertar(40,3);
 		L.mostrar();
 		float media = L.promedio();
-		System.out.println("El promedio de la lista es: %f",media);
+		System.out.print("El promedio de la lista es: ");
+		System.out.println(media);
 	}
 }
