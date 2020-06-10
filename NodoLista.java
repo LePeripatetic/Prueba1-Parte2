@@ -10,4 +10,8 @@ class NodoLista{
 		dato=x;
 		sgte=null;
 	}
+
+	public int getDato(){
+		return this.dato;
+	}
 }
